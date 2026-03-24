@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Arthur</title>
+  <style>
+    :root {
+      --bg: #FAFAFA;
+      --text: #000000;
+      --link: #707070;
+      --hover: red;
+      --nav: #7B68EE;
+      --rule: #2f2f2f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behaviour: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, "MS Sans Serif", sans-serif;
+      line-height: 1.42;
+      font-size: 15px;
+    }
+
+    a:link, a:visited {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover, a:focus {
+      color: var(--hover);
+      background-color: var(--bg);
+      text-decoration: underline;
+    }
+
+    .page {
+      margin-right: 70px;
+      margin-left: 110px;
+      padding: 10px 0 36px;
+      max-width: 1180px;
+    }
+
+    .header-block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 34px;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 2.35rem;
+      font-weight: 700;
+    }
+
+    .role {
+      margin: 8px 0 0 16px;
+      font-size: 1.55rem;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .contact-table,
+    .date-table {
+      border-collapse: collapse;
+      font-size: 0.96rem;
+    }
+
+    .contact-wrap {
+      margin-top: 18px;
+    }
+
+    .contact-table td:first-child {
+      width: 118px;
+      padding-right: 12px;
+      vertical-align: top;
+      font-weight: 700;
+    }
+
+    .contact-table td {
+      padding: 1px 0;
+      vertical-align: top;
+    }
+
+    .photo {
+      width: 220px;
+      max-width: 100%;
+      border: 1px solid #444;
+      display: block;
+    }
+
+    hr {
+      border: 0;
+      border-top: 3px solid var(--rule);
+      margin: 18px 0;
+    }
+
+    .nav {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .nav a {
+      color: var(--nav);
+      white-space: nowrap;
+    }
+
+    .section {
+      scroll-margin-top: 28px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 1.18rem;
+    }
+
+    .section p {
+      margin: 0 0 10px;
+    }
+
+    blockquote {
+      margin: 8px 0 0 24px;
+    }
+
+    ul.paper-list {
+      margin: 6px 0 0 18px;
+      padding-left: 16px;
+    }
+
+    ul.paper-list li {
+      margin-bottom: 12px;
+    }
+
+    .subheading {
+      margin: 6px 0 8px;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .date-table {
+      width: 100%;
+      margin-top: 6px;
+    }
+
+    .date-table td {
+      padding: 2px 0 8px;
+      vertical-align: top;
+    }
+
+    .date-table td.date {
+      width: 150px;
+      padding-right: 14px;
+      white-space: nowrap;
+    }
+
+    .muted {
+      color: #666666;
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      .header-block {
+        flex-direction: column;
+      }
+
+      .role {
+        margin-left: 0;
+      }
+
+      .date-table td.date {
+        width: 120px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 14px;
+      }
+
+      .name {
+        font-size: 2rem;
+      }
+
+      .role {
+        font-size: 1.25rem;
+      }
+
+      .date-table,
+      .contact-table,
+      .date-table tbody,
+      .date-table tr,
+      .contact-table tbody,
+      .contact-table tr {
+        display: block;
+      }
+
+      .date-table td,
+      .contact-table td {
+        display: block;
+        width: auto !important;
+        padding-right: 0;
+      }
+
+      .date-table td.date {
+        font-weight: 700;
+        padding-bottom: 1px;
+      }
+
+      .date-table tr {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header-block">
+      <div>
+        <h1 class="name">Thomas Arthur</h1>
+        <div class="role">PhD Student</div>
+
+        <div class="contact-wrap">
+          <table class="contact-table">
+            <tr>
+              <td>Address</td>
+              <td>School of Mathematics, The University of Edinburgh, James Clerk Maxwell Building, Edinburgh EH9 3FD, United Kingdom</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto:t.arthur@ed.ac.uk">t.arthur@ed.ac.uk</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <img class="photo" src="IMG_4398.jpeg" alt="Portrait of Thomas Arthur">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="nav" aria-label="Section navigation">
+      <a href="#research">Research</a> |
+      <a href="#papers">Papers</a> |
+      <a href="#cv">CV</a> |
+      <a href="#talks">Talks</a> |
+      <a href="#teaching">Teaching</a> |
+      <a href="#contact">Contact</a>
+    </div>
+
+    <hr>
+
+    <div id="research" class="section">
+      <h2>Research Interests</h2>
+      <blockquote>
+        Nonlinear dispersive partial differential equations (deterministic and stochastic),
+        harmonic analysis, and probability.
+      </blockquote>
+    </div>
+
+    <hr>
+
+    <div id="papers" class="section">
+      <h2>Papers</h2>
+      <ul class="paper-list">
+        <li>
+          T. Arthur, A. Chapouto,<br>
+          <em>Talbot effect for the one dimensional periodic stochastic nonlinear Schrödinger equation with additive and multiplicative noise</em><br>
+          <span class="muted">(in preparation)</span>
+        </li>
+        <li>
+          T. Arthur, D. Greco, K. Tsugawa,<br>
+          <em>Diophantine conditions in well-posedness theory for a coupled modulated KdV System</em><br>
+          <span class="muted">(in preparation)</span>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div id="cv" class="section">
+      <h2>CV</h2>
+
+      <p>
+        <a href="CV_Tom_17_12_25.pdf" download>Download full CV (PDF)</a>
+      </p>
+
+      <div class="subheading">Education</div>
+      <table class="date-table">
+        <tr>
+          <td class="date">2024–present</td>
+          <td>PhD in Mathematics, University of Edinburgh<br>Supervisors: Tadahiro Oh, Andreia Chapouto</td>
+        </tr>
+        <tr>
+          <td class="date">2020–2024</td>
+          <td>MMath, University of Warwick</td>
+        </tr>
+      </table>
+
+      <div class="subheading">Meetings Attended</div>
+      <table class="date-table">
+        <tr>
+          <td class="date">June 2025</td>
+          <td>BCAM - UPV/EHU summer school on harmonic analysis and PDEs, Bilbao</td>
+        </tr>
+        <tr>
+          <td class="date">June 2025</td>
+          <td>Probabilistic study of nonlinear dispersive PDEs, University of Birmingham, Birmingham, UK</td>
+        </tr>
+        <tr>
+          <td class="date">March 2025</td>
+          <td>Maxwell Institute Workshop on Stochastic Analysis, University of Edinburgh, Edinburgh, UK</td>
+        </tr>
+        <tr>
+          <td class="date">Feb 2025</td>
+          <td>LMS Harmonic Analysis PDE network meeting, University of Edinburgh, Edinburgh, UK</td>
+        </tr>
+        <tr>
+          <td class="date">Oct 2024</td>
+          <td>Scottish-Basque Analysis meeting, ICMS Edinburgh</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div id="talks" class="section">
+      <h2>Talks</h2>
+      <table class="date-table">
+        <tr>
+          <td class="date">April 2026</td>
+          <td>Poster presentation, Young Researchers in Stochastic and Dispersive PDEs, University of Edinburgh, Edinburgh, UK</td>
+        </tr>
+        <tr>
+          <td class="date">Autumn 2025</td>
+          <td>Reading group talk on rough path theory and SPDEs, University of Edinburgh, Edinburgh, UK</td>
+        </tr>
+        <tr>
+          <td class="date">June 2025</td>
+          <td>Poster presentation, Workshop on Harmonic Analysis and PDEs, BCAM Bilbao</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div id="teaching" class="section">
+      <h2>Teaching</h2>
+      <p>University of Edinburgh</p>
+      <table class="date-table">
+        <tr>
+          <td class="date">Spring 2026</td>
+          <td>Introduction to Mathematical Analysis (MATH08081)</td>
+        </tr>
+        <tr>
+          <td class="date">Autumn 2025</td>
+          <td>Honours Analysis, Skills (MATH100682)</td>
+        </tr>
+        <tr>
+          <td class="date">Spring 2024</td>
+          <td>Foundations of Pure Mathematics (MATH08064)</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:t.arthur@ed.ac.uk">t.arthur@ed.ac.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
